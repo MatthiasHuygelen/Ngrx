@@ -1,0 +1,2 @@
+# Ngrx
+NgRx example application 
