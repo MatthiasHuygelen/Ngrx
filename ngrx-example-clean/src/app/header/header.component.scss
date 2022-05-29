@@ -1,0 +1,27 @@
+@import "../../_variables.scss";
+
+nav {
+        background-color: $primary;
+        color: white;
+        display: flex;
+        height: 50px;
+        align-items: center;
+
+        > a {
+                flex: 0 0 100px;
+                text-align: center;
+                text-decoration: none;
+                &:link {
+                        color: white;
+                }
+                &:visited {
+                        color: white;
+                }
+                &:hover:not(.title) {
+                        color: black;
+                }
+                &:active {
+                        color: white;
+                }
+        }
+}

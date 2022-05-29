@@ -1,0 +1,23 @@
+// Import material theming functions
+@import "~@angular/material/theming";
+@include mat-core();
+
+// Copy the palettes from your selected theme (usually theme.scss).
+$app-primary: mat-palette($mat-blue);
+$app-accent: mat-palette($mat-light-blue);
+$app-warn: mat-palette($mat-pink);
+$app-theme: mat-light-theme($app-primary, $app-accent, $app-warn);
+
+$primary: mat-color($app-primary);
+$accent: mat-color($app-accent);
+$warn: mat-color($app-warn);
+
+@include angular-material-theme($app-theme);
+
+.mat-list-item-content:focus,
+.mat-list-option:focus,
+.mat-list-single-selected-option {
+        color: white;
+        opacity: 0.8 !important;
+        background: $primary !important;
+}

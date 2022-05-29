@@ -1,0 +1,21 @@
+:host {
+        .flex-row {
+                justify-content: center;
+                margin: 10px;
+        }
+
+        ::ng-deep {
+                h1.courses {
+                        padding: 10px 0px 0px 10px;
+                        margin-bottom: 0px;
+                }
+        }
+
+        .list {
+                width: 300px;
+        }
+
+        .edit {
+                width: 800px;
+        }
+}
